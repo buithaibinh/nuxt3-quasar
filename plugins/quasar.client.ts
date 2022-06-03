@@ -1,0 +1,66 @@
+import { defineNuxtPlugin } from '#app'
+import {
+  Quasar,
+  QPage,
+  QBtn,
+  QToolbarTitle,
+  QToolbar,
+  QCard,
+  QCardSection,
+  QPageContainer,
+  QDrawer,
+  QLayout,
+  QList,
+  QHeader,
+  QItemLabel,
+  QIcon,
+  QItemSection,
+  QItem,
+  QChip,
+  QSpace,
+  QAvatar,
+  QMenu,
+  QScrollArea,
+  QBadge,
+  QTooltip,
+  QInput,
+  ClosePopup,
+  Dialog,
+} from 'quasar'
+
+export default defineNuxtPlugin((nuxtApp) => {
+  const quasarUserOptions = {
+    components: {
+      QInput,
+      QTooltip,
+      QBadge,
+      QScrollArea,
+      QMenu,
+      QAvatar,
+      QSpace,
+      QPage,
+      QBtn,
+      QToolbarTitle,
+      QToolbar,
+      QCard,
+      QCardSection,
+      QPageContainer,
+      QList,
+      QLayout,
+      QDrawer,
+      QHeader,
+      QItemLabel,
+      QIcon,
+      QItemSection,
+      QItem,
+      QChip,
+    },
+    directives: {
+      ClosePopup,
+    },
+    plugins: {
+      Dialog,
+    },
+  }
+  nuxtApp.vueApp.use(Quasar, quasarUserOptions)
+})

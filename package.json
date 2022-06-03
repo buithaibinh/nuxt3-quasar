@@ -1,0 +1,44 @@
+{
+  "name": "nuxt3-quasar-starter",
+  "description": "nuxt3 starter with typescript and quasar",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:buithaibinh/nuxt3-quasar-starter.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Binh Bui",
+    "email": "buithaibinh@gmail.com"
+  },
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "lint": "eslint --ext \".ts,.js,.vue\" --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config-typescript": "^10.0.0",
+    "@quasar/vite-plugin": "^1.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.27.0",
+    "@typescript-eslint/parser": "^5.27.0",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-nuxt": "^3.2.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^9.1.0",
+    "nuxt": "^3.0.0-rc.3",
+    "postcss": "8.4.7",
+    "postcss-loader": "^6.2.1",
+    "prettier": "^2.6.2",
+    "sass": "1.32.0",
+    "sass-loader": "^12.4.0",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.14.0",
+    "quasar": "^2.7.1"
+  }
+}
